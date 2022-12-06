@@ -3,6 +3,7 @@ package com.example.sura.controller;
 import com.example.sura.model.Pago;
 import com.example.sura.repository.PagoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -56,7 +57,7 @@ public class PagoController {
     public ResponseEntity<Pago> deletePago(Long id) {
         Pago pago = pagoRepository.findById(id).orElseThrow( () -> new RuntimeException("No se encontro el pago con id: " + id));
         pagoRepository.delete(pago);
-        return ResponseEntity.ok(pago);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
 }

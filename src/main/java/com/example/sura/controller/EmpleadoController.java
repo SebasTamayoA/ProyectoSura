@@ -5,6 +5,7 @@ import com.example.sura.exception.ResourceNotFoundException;
 import com.example.sura.model.Empleado;
 import com.example.sura.repository.EmpleadoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -56,6 +57,6 @@ public class EmpleadoController {
     public ResponseEntity<Empleado> deleteEmpleado(@PathVariable("id") Long id) {
         Empleado empleado = empleadoRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Empleado no existe con id: " + id));
         empleadoRepository.delete(empleado);
-        return ResponseEntity.ok(empleado);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }
