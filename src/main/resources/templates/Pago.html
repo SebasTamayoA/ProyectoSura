@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="Estilos/materialize.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos/materialize.min.css">
+    <link rel="stylesheet" href="Estilos/Estilos.css">
+    <title>Pago</title>
+</head>
+
+<body>
+    <div class="row">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="inicio.html" class="brand-logo"><img src="Imagenes/Sura.png" id="imgSura"></a>
+                
+            </div>
+        </nav>
+    </div>
+
+    <div class="row">
+        <img src="Imagenes/SegurosSura.png" alt="" id="Sura">
+    </div>
+
+    <div class="row">
+        <div class="col s8">
+            <div class="row">
+                <div class="col s6">
+                    <h4><center>SEGUROS</center></h4>
+                </div>
+                <div class="col s6">
+                    <h4>PAGAR</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <h4>Plan Autos Global</h4>
+                </div>
+                <div class="col s6">
+                    <a href="https://buy.stripe.com/test_cN25lV0PT0KLbtK4gi" class="brand-logo"><img src="Imagenes/tarjetascredito2.png" alt="" height="38" width="70"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <h4>Seguro de Autos Eléctricos e Híbridos</h4>
+                </div>
+                <div class="col s6">
+                    <a href="https://buy.stripe.com/test_dR63dN1TX0KL1Ta003" class="brand-logo"><img src="Imagenes/tarjetascredito2.png" alt="" height="38" width="70"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                <h4>Plan de Autos Clasico</h4>
+                </div>
+                <div class="col s6">
+                    <a href="https://buy.stripe.com/test_fZe29J8ilgJJgO47sw" class="brand-logo"><img src="Imagenes/tarjetascredito2.png" alt="" height="38" width="70"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                <h4>Plan Usado Protegido</h4>
+                </div>
+                <div class="col s6">
+                    <a href="https://buy.stripe.com/test_3csg0z1TXallapG28d" class="brand-logo"><img src="Imagenes/tarjetascredito2.png" alt="" height="38" width="70"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                <h4>Plan Autos Básico</h4>
+                </div>
+                <div class="col s6">
+                    <a href="https://buy.stripe.com/test_9AQcOnaqtgJJapGdQW" class="brand-logo"><img src="Imagenes/tarjetascredito2.png" alt="" height="38" width="70"></a>
+                </div>
+            </div>
+
+           
+        </div>
+
+        <div class="col s4">
+            <img src="Imagenes/logo-usuario-sura.svg" alt="" id="LogoUsuario">
+        </div>
+    </div>
+</body>
+
+<script src="js/materialize.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var sel = document.querySelectorAll('select');
+        M.FormSelect.init(sel);
+    });
+</script>
+
+</html>

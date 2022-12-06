@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="../materialize/css/materialize.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../materialize/js/materialize.min.js" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        table, th,th{
+            border-spacing: 30px;
+            border: 1px  solid black;
+            border-collapse: collapse;
+            border-collapse: separate;
+    border-spacing: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <form>
+
+        <section class="espacio">
+            <div class="row">
+                <div class="col-12 col-sm-8 ">
+                    <img src="../UltimaVISTA/Imagenes/Sura.png" width="200px" height="80px" >
+                </div>
+            </div>   
+
+            <div class="row">
+                <div class="col-6 col-sm-12">
+                    <h1><label type="text" id="txtText" name="txtText">Poliza de seguros</label></h1>
+            </div>
+   
+        </section>
+
+    </form>
+</header>
+
+     <table>
+        <div class="row">
+            <div class="col-6 col-sm-12">
+                <h1><label type="text" id="txtText" name="txtText">Tomador(responsable del pago)</label></h1>
+        </div>
+        <img src="../UltimaVISTA/Imagenes/5556499.png" width="50px" height="40px">
+                <tr>
+            <th style="color: blue;"><input type="text" placeholder="Nombre"></th><p><th style="color: blue;"><input type="text" placeholder="Cedula"></th>
+            <th style="color: blue;"><input type="text" placeholder="Dirección"></th><p><th style="color: blue;"><input type="text" placeholder="Correo Electronico">
+        </tr>
+      
+        <tr>
+            
+           
+        </tr>
+     </table>
+     <button type="submit">
+        Guardar
+     </button>
+    <h1><label type="text" id="txtText" name="txtText">Informacion basica de tu seguro  </label></h1>
+    <img src="../UltimaVISTA/Imagenes/2541988.png" width="50px" height="40px">
+    <table cellspacing="4" cellpadding="4" border="1" width=1200 bgcolor=dddddd>
+        <tr>
+            <td colspan="2" bgcolor="blue" align="center"><font color="white"><strong>Informacion Basica Seguro / Vigencia de tu seguro</strong></font></td>
+        </tr>
+        <tr>
+            <td width="50%">
+                <table align="right">
+                    <tr>
+                        <td style="color: blue;">Numero De Poliza </td>
+                        <td align="center"> <input type="text" placeholder=" "></td>
+
+                        <td style="color: blue;">Valor sin iva </td>
+                        <td align="center"> <input type="text" placeholder=" "></td>
+                    </tr>
+                    <tr>
+                        <td style="color: blue;">Oficina de radicación</td>
+                        <td align="center"> <input type="text" placeholder=" "></td>
+                        <td style="color: blue;">Valor con Iva </td>
+                        <td align="center"> <input type="text" placeholder=" "></td>
+                    </tr>
+                    <tr>
+                        <td style="color: blue;">Forma de pago</td>
+                        <td align="center"> <input type="text" placeholder=" "></td>
+                    </tr>
+
+                    <tr>
+                        <td style="color: blue;">Total Apagar</td>
+                        <td align="right"> <input type="text" placeholder=" "></td>
+                    </tr>
+                </table>
+            </td>
+            <td width="35%">
+                <table align="right" cellspacing="4" cellpadding="4">
+                    <tr>
+                        <td style="color: blue;">Desde</td>
+                        <td align="center"> <input type="text" placeholder="dd-mm-aa"></td>
+                        <td style="color: blue;">Hasta</td>
+                        <td align="center"> <input type="text" placeholder=" dd-mm-aa"></td>
+                        <tr>
+                            <td style="color: blue;">Ciudad De Expedición</td>
+                            <td align="center"> <input type="text" placeholder=" "></td>
+                            <td  style="color: blue;">Fecha De Expedición</td>
+                            <td align="center"> <input type="text" placeholder="dd-mm-aa "></td>
+                        </tr>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        </table>
+        <h1><label type="text" id="txtText" name="txtText">Informacion basica de tu vehiculo  </label></h1>
+        <img src="../UltimaVISTA/Imagenes/carrito.png" width="65px" height="50px">
+        <table cellspacing="4" cellpadding="4" border="1" width=1200 bgcolor=dddddd>
+            <tr>
+                <td colspan="2" bgcolor="blue" align="center"><font color="white"><strong>Informacion Vehiculo Asegurado</strong></font></td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <table align="right">
+                        <tr>
+                            <td style="color: blue;">Placa </td>
+                            <td align="center"> <input type="text" placeholder=" "></td>
+    
+                            <td style="color: blue;">Modelo </td>
+                            <td align="center"> <input type="text" placeholder=" "></td>
+                            <td style="color: blue;">Marca - Caracteristicas </td>
+                            <td align="center"> <input type="text" placeholder=" "></td>
+                            <td style="color: blue;">Clase </td>
+                            <td align="center"> <input type="text" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td style="color: blue;">Servicio</td>
+                            <td align="center"> <input type="text" placeholder=" "></td>
+                            <td style="color: blue;">Codigo Comercial(Fase Colda) </td>
+                            <td align="center"> <input type="text" placeholder=" "></td>
+                            <td style="color: blue;">Motor </td>
+                            <td align="center"> <input type="text" placeholder=" "></td>
+                            <td style="color: blue;">Chasis o serie </td>
+                            <td align="center"> <input type="text" placeholder=" "></td>
+                            <td style="color: blue;">Ciudad de circulacion  </td>
+                            <td align="center"> <input type="text" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td style="color: blue;">Valor de referencia</td>
+                            <td align="center"> <input type="text" placeholder=" "></td>
+                            <td style="color: blue;">Valor total Asegurado</td>
+                            <td align="center"> <input type="text" placeholder=" "></td>
+                        </tr>
+                    </table>
+                </td>
+                
+            </tr>
+            <tr>
+                
+            </tr>
+            </table>
+</body>
+</html>

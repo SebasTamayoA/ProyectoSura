@@ -1,0 +1,128 @@
+#imgSura {
+    width: 150px;
+    height: 60px;
+    margin-left: 20px;
+    margin: 0px;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+#Sura {
+    height: 400px;
+    width: 1348px;
+    margin-top: 45px;
+}
+
+.material-icons {
+    font-size: 5px;
+    color: green;
+    text-align: center;
+    margin-left: 5px;
+}
+
+#addCircle {
+    color: #ffa726;
+}
+
+#Cancel {
+    color: #b0bec5;
+}
+
+nav {
+    background-color: #ffffff;
+    position: fixed;
+    margin-bottom: 10px;
+    z-index: 100;
+}
+
+i.large {
+    font-size: 2rem;
+}
+
+.row .col.s7 {
+    margin-left: 30px;
+}
+
+#btnComprar {
+    border-radius: 5px;
+    font-size: 10px;
+    font: 20px;
+    background-color: #cddc39;
+}
+
+#btnIniciar {
+    border-radius: 20px;
+    background-color: blue;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+th {
+    padding: 10px 15px 10px;
+    vertical-align: top;
+    position: relative;
+}
+
+td {
+    margin-left: 2px;
+    text-align: center;
+}
+
+#tddefault {
+    text-align: left !important;
+}
+
+#Movilidad {
+    margin-top: 30px;
+    height: 320px;
+}
+
+
+#Noticia {
+    margin-top: 40px;
+    margin-right: 100px;
+    height: 300px;
+    width: 408px;
+}
+
+#colNoticia {
+    background-color: #eceff1;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.row .col.m7 {
+    width: 430px;
+}
+
+#imgRegistro {
+    text-align: right;
+
+}
+
+h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+#btnConfirmar {
+    border-radius: 10px;
+    background-color: blue;
+    margin-left: 45%;
+    margin-bottom: 5px;
+}
+
+#LogoUsuario{
+    margin-top: 140px;
+}
+
+.col .row{
+    margin-left: 300px;
+}

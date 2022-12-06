@@ -1,0 +1,18 @@
+/* img{
+    width: 200px;
+    margin: 30px;
+    text-align: right;
+} */
+
+#txtText{
+    color: #0036c9;
+    display: flex;
+    font-weight: bold;
+}
+
+.espacio{
+    display: flex;
+    text-align: left;
+    margin: 20px;
+    justify-content: space-between;
+ }
