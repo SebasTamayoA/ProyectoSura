@@ -13,26 +13,31 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "api/clientes")
 public class ClienteController {
+    //implementación de controlador de cliente
 
     @Autowired
     private ClienteRepository clienteRepository;
 
+    // get all clientes
     @GetMapping
     public List<Cliente> getAllClientes() {
         return clienteRepository.findAll();
     }
 
+    // create cliente
     @PostMapping
     public Cliente createCliente(@RequestBody Cliente cliente) {
         return clienteRepository.save(cliente);
     }
 
+    // get cliente by id
     @GetMapping(value = "{id}")
     public ResponseEntity<Cliente> getClienteById(@PathVariable Long id) {
         Cliente cliente = clienteRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Cliente no existe con id: " + id));
         return ResponseEntity.ok(cliente);
     }
 
+    // update cliente
     @PutMapping(value = "{id}")
     public ResponseEntity<Cliente> updateCliente(@PathVariable Long id,@RequestBody Cliente clienteDetails){
         Cliente updateCliente = clienteRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Cliente no existe con id: " + id));
@@ -49,6 +54,7 @@ public class ClienteController {
         return ResponseEntity.ok(updateCliente);
     }
 
+    // delete cliente
     @DeleteMapping(value = "{id}")
     public ResponseEntity<Cliente> deleteCliente(@PathVariable Long id){
         Cliente cliente = clienteRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Cliente no existe con id: " + id));
